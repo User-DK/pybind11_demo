@@ -1,0 +1,12 @@
+name: demoenv
+channels:
+  - conda-forge
+
+dependencies:
+  - meson
+  - pybind11
+  - cmake
+  - ninja
+  - python
+  - pytest
+  - meson-python

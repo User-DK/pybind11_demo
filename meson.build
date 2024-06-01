@@ -20,12 +20,13 @@ py.extension_module(
   dependencies: deps,
   cpp_args : args,
   install: true,
-  subdir: 'op'
+  subdir: 'pybind11_demo/'
 )
 
-py.install_sources([
-    'main/__init__.py',
+py.install_sources(
+  [
+    'pybind11_demo/__init__.py',
   ],
   pure: false, # install next to compiled extension
-  subdir: 'op'
+  subdir: 'pybind11_demo'
 )

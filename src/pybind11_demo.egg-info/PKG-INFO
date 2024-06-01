@@ -1,7 +1,0 @@
-Metadata-Version: 2.1
-Name: pybind11_demo
-Version: 0.1
-Summary: Demo Python Bindings
-Author-email: Daivik Karbhari <daivikkarbhari01@gmail.com>
-Requires-Python: >=3.9
-Requires-Dist: pybind11>=2.12.0

@@ -1,6 +1,6 @@
 [project]
 name = "pybind11_demo"
-version = "0.1"
+version = "1.0"
 description="Demo Python Bindings"
 authors = [{name = "Daivik Karbhari", email="daivikkarbhari01@gmail.com"}]
 dependencies=["pybind11>=2.12.0"]
@@ -10,7 +10,7 @@ license = {file = 'LICENSE.txt'}
 
 
 [build-system]
-requires = ["meson-python","setuptools"]
+requires = ["pybind11","meson-python"]
 build-backend= "mesonpy"
 
 # [tool.mesonpy]

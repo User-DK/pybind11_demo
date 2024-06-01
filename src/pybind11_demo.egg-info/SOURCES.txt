@@ -1,9 +1,0 @@
-README.md
-pyproject.toml
-setup.py
-src/pybind11_demo.egg-info/PKG-INFO
-src/pybind11_demo.egg-info/SOURCES.txt
-src/pybind11_demo.egg-info/dependency_links.txt
-src/pybind11_demo.egg-info/requires.txt
-src/pybind11_demo.egg-info/top_level.txt
-test/test_add.py

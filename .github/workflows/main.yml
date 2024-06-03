@@ -8,14 +8,16 @@ jobs:
         - name: micromamba-setup
           uses: mamba-org/setup-micromamba@v1
           with:
-            generate-run-shell: true
             environment-file: environment.yml
+            generate-run-shell: true
             cache-environment: true
+            init-shell: bash
         - name: build-and-install
           shell: micromamba-shell {0}
           run: |
             meson setup build
             pip install .
         - name: test
+          shell: micromamba-shell {0}
           run: | 
             pytest tests

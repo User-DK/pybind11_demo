@@ -13,7 +13,7 @@ deps += pyb11_dep
 
 #can use shared_module but not allows to give a specific name to the target .so  
 py.extension_module(           
-  'pybind11_demo',
+  'pybind11_add',
   sources : [
     'python_bindings/bindings.cpp'
   ],

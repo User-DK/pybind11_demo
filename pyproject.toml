@@ -13,5 +13,8 @@ license = {file = 'LICENSE.txt'}
 requires = ["pybind11","meson-python"]
 build-backend= "mesonpy"
 
-# [tool.mesonpy]
-# module = "pybind11_demo"
+#using .pytest.ini
+# [tool.pytest.ini_options]
+# minversion="6.0"
+# addopts = "-ra -q"
+# testpaths = ["tests"]

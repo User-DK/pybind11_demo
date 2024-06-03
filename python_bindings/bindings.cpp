@@ -3,9 +3,9 @@
 
 namespace py = pybind11;
 
-PYBIND11_MODULE(pybind11_demo, m)
+PYBIND11_MODULE(pybind11_add, m)
 {
-    m.doc() = "pybind11 demo plugin";
+    m.doc() = "pybind11 demo addition plugin";
 
     m.def("add", &add, "A function that adds two numbers");
 }

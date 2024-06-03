@@ -4,17 +4,17 @@ jobs:
   testing:
       runs-on: ubuntu-latest
       steps:
-        - uses: actions/checkout@v4
+        - uses: actions/checkout@v4.1.5
         - name: micromamba-setup
           uses: mamba-org/setup-micromamba@v1
           with:
             environment-file: environment.yml
             cache-environment: true
         - name: build-and-install
+          shell: micromamba-shell {0}
           run: |
             meson setup build
             pip install .
-          shell: micromamba-shell {0}
         - name: test
           run: | 
             pytest tests

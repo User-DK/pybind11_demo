@@ -8,6 +8,7 @@ jobs:
         - name: micromamba-setup
           uses: mamba-org/setup-micromamba@v1
           with:
+            generate-run-shell: true
             environment-file: environment.yml
             cache-environment: true
         - name: build-and-install
